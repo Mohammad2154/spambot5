@@ -2,7 +2,7 @@
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const myid = ['605275012785635349'];
-const prefix = ['$'];
+const prefix = ['^'];
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -47,7 +47,7 @@ if (message.content === prefix+'Spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**اللهم صلي على سيدنا محمد** :flag_ps:`)
+        message.channel.send(`**اللهم صلي عليك يا نبي**`)
           .then(m => {
             count++;
           })
